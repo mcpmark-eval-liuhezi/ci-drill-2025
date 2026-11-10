@@ -1,0 +1,13 @@
+name: Drill CI
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  drill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Expected failure (drill exercise)
+        run: exit 1
